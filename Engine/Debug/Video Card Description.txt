@@ -1,0 +1,2 @@
+Model: NVIDIA GeForce GTX 950M
+Memory: 3072MB

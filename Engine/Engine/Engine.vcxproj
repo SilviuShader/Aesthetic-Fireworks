@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{28C7EB64-DD1B-4814-A678-528AC2B8A2A6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AestheticClass.cpp" />
+    <ClCompile Include="AlphaMapShaderClass.cpp" />
+    <ClCompile Include="BilboardClass.cpp" />
+    <ClCompile Include="BitmapClass.cpp" />
+    <ClCompile Include="BumpMapShaderClass.cpp" />
+    <ClCompile Include="CameraClass.cpp" />
+    <ClCompile Include="ClipPlaneShaderClass.cpp" />
+    <ClCompile Include="ColorShaderClass.cpp" />
+    <ClCompile Include="CpuClass.cpp" />
+    <ClCompile Include="D3DClass.cpp" />
+    <ClCompile Include="DebugWindowClass.cpp" />
+    <ClCompile Include="DepthShaderClass.cpp" />
+    <ClCompile Include="FadeShaderClass.cpp" />
+    <ClCompile Include="FireShaderClass.cpp" />
+    <ClCompile Include="FireworkClass.cpp" />
+    <ClCompile Include="FireworksControllerClass.cpp" />
+    <ClCompile Include="FloorClass.cpp" />
+    <ClCompile Include="FogShaderClass.cpp" />
+    <ClCompile Include="FontClass.cpp" />
+    <ClCompile Include="FontShaderClass.cpp" />
+    <ClCompile Include="FpsClass.cpp" />
+    <ClCompile Include="FrustumClass.cpp" />
+    <ClCompile Include="GlassShaderClass.cpp" />
+    <ClCompile Include="GraphicsClass.cpp" />
+    <ClCompile Include="InputClass.cpp" />
+    <ClCompile Include="LightClass.cpp" />
+    <ClCompile Include="LightMapShaderClass.cpp" />
+    <ClCompile Include="LightShaderClass.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="ModelClass.cpp" />
+    <ClCompile Include="ModelListClass.cpp" />
+    <ClCompile Include="MultiTextureShaderClass.cpp" />
+    <ClCompile Include="NetworkClass.cpp" />
+    <ClCompile Include="PointLightClass.cpp" />
+    <ClCompile Include="PositionClass.cpp" />
+    <ClCompile Include="ReflectionShaderClass.cpp" />
+    <ClCompile Include="RefractionShaderClass.cpp" />
+    <ClCompile Include="RenderTextureClass.cpp" />
+    <ClCompile Include="SoundClass.cpp" />
+    <ClCompile Include="SpecMapShaderClass.cpp" />
+    <ClCompile Include="SystemClass.cpp" />
+    <ClCompile Include="TextClass.cpp" />
+    <ClCompile Include="TextureArrayClass.cpp" />
+    <ClCompile Include="TextureClass.cpp" />
+    <ClCompile Include="TextureShaderClass.cpp" />
+    <ClCompile Include="TimerClass.cpp" />
+    <ClCompile Include="TranslateShaderClass.cpp" />
+    <ClCompile Include="TransparentShaderClass.cpp" />
+    <ClCompile Include="WaterShaderClass.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AestheticClass.h" />
+    <ClInclude Include="AlphaMapShaderClass.h" />
+    <ClInclude Include="BilboardClass.h" />
+    <ClInclude Include="BitmapClass.h" />
+    <ClInclude Include="BumpMapShaderClass.h" />
+    <ClInclude Include="CameraClass.h" />
+    <ClInclude Include="ClipPlaneShaderClass.h" />
+    <ClInclude Include="ColorShaderClass.h" />
+    <ClInclude Include="CpuClass.h" />
+    <ClInclude Include="D3DClass.h" />
+    <ClInclude Include="DebugWindowClass.h" />
+    <ClInclude Include="DepthShaderClass.h" />
+    <ClInclude Include="FadeShaderClass.h" />
+    <ClInclude Include="FireShaderClass.h" />
+    <ClInclude Include="FireworkClass.h" />
+    <ClInclude Include="FireworksControllerClass.h" />
+    <ClInclude Include="FloorClass.h" />
+    <ClInclude Include="FogShaderClass.h" />
+    <ClInclude Include="FontClass.h" />
+    <ClInclude Include="FontShaderClass.h" />
+    <ClInclude Include="FpsClass.h" />
+    <ClInclude Include="FrustumClass.h" />
+    <ClInclude Include="GlassShaderClass.h" />
+    <ClInclude Include="GraphicsClass.h" />
+    <ClInclude Include="InputClass.h" />
+    <ClInclude Include="LightClass.h" />
+    <ClInclude Include="LightMapShaderClass.h" />
+    <ClInclude Include="LightShaderClass.h" />
+    <ClInclude Include="ModelClass.h" />
+    <ClInclude Include="ModelListClass.h" />
+    <ClInclude Include="MultiTextureShaderClass.h" />
+    <ClInclude Include="NetworkClass.h" />
+    <ClInclude Include="NetworkMessages.h" />
+    <ClInclude Include="PointLightClass.h" />
+    <ClInclude Include="PositionClass.h" />
+    <ClInclude Include="ReflectionShaderClass.h" />
+    <ClInclude Include="RefractionShaderClass.h" />
+    <ClInclude Include="RenderTextureClass.h" />
+    <ClInclude Include="SoundClass.h" />
+    <ClInclude Include="SpecMapShaderClass.h" />
+    <ClInclude Include="SystemClass.h" />
+    <ClInclude Include="TextClass.h" />
+    <ClInclude Include="TextureArrayClass.h" />
+    <ClInclude Include="TextureShaderClass.h" />
+    <ClInclude Include="TimerClass.h" />
+    <ClInclude Include="TranslateShaderClass.h" />
+    <ClInclude Include="TransparentShaderClass.h" />
+    <ClInclude Include="WaterShaderClass.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AlphaMap.ps" />
+    <None Include="AlphaMap.vs" />
+    <None Include="BumpMap.ps" />
+    <None Include="BumpMap.vs" />
+    <None Include="ClipPlane.ps" />
+    <None Include="ClipPlane.vs" />
+    <None Include="Color.vs">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Data\alpha01.dds" />
+    <None Include="Data\bath.txt" />
+    <None Include="Data\blue01.dds" />
+    <None Include="Data\bump01.dds" />
+    <None Include="Data\bump02.dds" />
+    <None Include="Data\bump03.dds" />
+    <None Include="Data\cube.txt" />
+    <None Include="Data\dirt01.dds" />
+    <None Include="Data\fire01.dds" />
+    <None Include="Data\floor.txt" />
+    <None Include="Data\font.dds" />
+    <None Include="Data\fontdata.txt" />
+    <None Include="Data\glass01.dds" />
+    <None Include="Data\grid01.dds" />
+    <None Include="Data\ground.txt" />
+    <None Include="Data\ground01.dds" />
+    <None Include="Data\ice01.dds" />
+    <None Include="Data\icebump01.dds" />
+    <None Include="Data\light01.dds" />
+    <None Include="Data\marble01.dds" />
+    <None Include="Data\noise01.dds" />
+    <None Include="Data\plane01.txt" />
+    <None Include="Data\seafloor.dds" />
+    <None Include="Data\sound01.wav" />
+    <None Include="Data\sound02.wav" />
+    <None Include="Data\spec02.dds" />
+    <None Include="Data\sphere.txt" />
+    <None Include="Data\square.txt" />
+    <None Include="Data\stone01.dds" />
+    <None Include="Data\stone02.dds" />
+    <None Include="Data\triangle.txt" />
+    <None Include="Data\wall.txt" />
+    <None Include="Data\wall01.dds" />
+    <None Include="Data\water.txt" />
+    <None Include="Data\water01.dds" />
+    <None Include="Depth.ps" />
+    <None Include="Depth.vs" />
+    <None Include="Fade.ps" />
+    <None Include="Fade.vs" />
+    <None Include="Fire.ps" />
+    <None Include="Fire.vs" />
+    <None Include="Fog.ps" />
+    <None Include="Fog.vs" />
+    <None Include="Font.ps" />
+    <None Include="Font.vs" />
+    <None Include="Glass.ps" />
+    <None Include="Glass.vs" />
+    <None Include="Light.ps" />
+    <None Include="Light.vs" />
+    <None Include="LightMap.ps" />
+    <None Include="LightMap.vs" />
+    <None Include="MultiTexture.ps" />
+    <None Include="MultiTexture.vs" />
+    <None Include="Reflection.ps" />
+    <None Include="Reflection.vs" />
+    <None Include="Refraction.ps" />
+    <None Include="Refraction.vs" />
+    <None Include="SpecMap.ps" />
+    <None Include="SpecMap.vs" />
+    <None Include="Texture.ps" />
+    <None Include="Texture.vs" />
+    <None Include="TextureClass.h" />
+    <None Include="Translate.ps" />
+    <None Include="Translate.vs" />
+    <None Include="Transparent.ps" />
+    <None Include="Transparent.vs" />
+    <None Include="Water.ps" />
+    <None Include="Water.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <_EmbedManagedResourceFile Include="Color.ps">
+      <FileType>Document</FileType>
+    </_EmbedManagedResourceFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Data\Spot.dds" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Data\explosion.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Data\cylinder.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
